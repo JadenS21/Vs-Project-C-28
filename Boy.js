@@ -9,7 +9,7 @@ class Boy{
         this.boy = loadImage('sprites/boy.png');
         this.pointB = pointB
         this.boy = Constraint.create(options);
-        World.add(world, this.boy);
+        World.add(world, this.sling);
     }
     
     attach(body){
@@ -28,7 +28,7 @@ class Boy{
             push();
             
             stroke(48,22,8);
-            if(pointA.x < 230) {
+            if(pointA.x < 220) {
                 strokeWeight(7);
                 line(pointA.x - 20, pointA.y, pointB.x -10, pointB.y);
                 line(pointA.x - 20, pointA.y, pointB.x + 30, pointB.y - 3);
